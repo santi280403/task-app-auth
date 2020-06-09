@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Tasks</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+
+                {{#if this.users}}
+                <a href="/tasks" class="nav-item nav-link">Tasks</a>
+                <a href="/createTask" class="nav-item nav-link">Form task</a>
+                <a href="/logout" class="nav-item nav-link">Logout</a>
+                {{else}}
+
+                <a class="nav-item nav-link" href="/signin">Sign In</a>
+                <a class="nav-item nav-link" href="/signup">Sign Up</a>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</nav>

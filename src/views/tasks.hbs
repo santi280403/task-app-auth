@@ -1,0 +1,43 @@
+<div class="row">
+    {{#if task}}
+    {{#each task}}
+
+    <div class="p-4 ancho ">
+        <div class="card">
+            <div class="card-header">
+                {{title}}
+            </div>
+            <div class="card-body">
+                {{description}}
+            </div>
+            <div class="card-footer">
+                <a class="btn btn-danger" href="/delete/{{id}}">
+                    Delete
+                </a>
+
+                <a class="btn btn-secondary" href="/edit/{{id}}">Edit</a>
+
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+
+    {{else}}
+
+    <div class="col-md-6 p-4">
+        <div class="card">
+            <div class="card-header">
+                Message
+            </div>
+            <div class="card-body">
+                No tasks
+                <a href="/createTask" class="btn btn-secondary btn-block">
+                    Create task
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {{/if}}
+</div>

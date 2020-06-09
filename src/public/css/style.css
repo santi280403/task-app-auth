@@ -1,0 +1,14 @@
+.abs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form{
+    width: 300px;
+}
+
+.ancho{
+    width: 300px;
+}
